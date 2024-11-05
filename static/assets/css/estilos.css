@@ -1,0 +1,32 @@
+.raleway-regular {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "raleway", sans-serif ;
+  }
+  :root {
+    --main-bg-color: #0093f3;
+  }
+  .navbar {
+    background: var(--main-bg-color);
+    color: #FFFFFF;
+  }
+
+  .dip{
+    display: inline-block;
+    background: var(--main-bg-color)
+  }
+  .nav-link{
+    color: #FFFFFF;
+  }
+  header{
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
