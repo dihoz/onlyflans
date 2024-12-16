@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block 'content' %}
+<div class="container">
+     Login Clientes
+<p>
+    <form action="" method="POST">
+        {%csrf_token%}
+        {{error}}
+        {{form}}
+        <input type="submit" class="btn btn-primary" name="" id="" value="Login">
+    </form>
+</p>
+</div>
+{% endblock %}

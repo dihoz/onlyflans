@@ -17,12 +17,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .views import acerca, indice, base, welcome , flanes
+from web.views import flanes_privados, log_out, log_in, exito, flanes_publicos, contacto
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', indice ),
-    path('acerca/', acerca  ),
+    path('', indice , name="indice" ),
+    path('acerca/', acerca, name="acerca" ),
     path('base/', base),
-    path('welcome/', welcome),
-    path('flanes/', flanes)
+    path('welcome/', welcome, name="welcome"),
+    path('flanes/', flanes, name='flanes'),
+    path('flanesprivados/', flanes_privados, name="flanesprivados"),
+    path('login/', log_in, name="login"),
+    path('logout/', log_out, name="logout"),
+    path('exito/', exito, name="exito"),
+    path('flanespublicos/', flanes_publicos, name="flanespublic"),
+    path('contacto/', contacto, name="contacto")
 ]
